@@ -57,22 +57,33 @@ export default function Home() {
    
       </Head>
 
+    <header id="header" className="header d-flex align-items-center fixed-top bg-white shadow-sm py-2">
+  <div className="container-fluid container-xl d-flex flex-wrap align-items-center justify-content-between">
     
-        <header
-          id="header"
-          className="header d-flex align-items-center fixed-top"
+    <a href="#" style={{ textDecoration: "none" }} className="logo d-flex align-items-center mb-2 mb-md-0">
+      <div className="d-flex align-items-center gap-2 flex-wrap">
+        <img src="assets/img/logo.png" alt="Logo" style={{ height: "50px", maxWidth: "100%" }} />
+
+        <h1
+          className="sitename mb-0"
+          style={{
+            fontFamily: "Bahnschrift",
+            fontSize: "20px",
+            color: "#000",
+            whiteSpace: "nowrap",
+          }}
         >
-          <div className="container-fluid container-xl position-relative d-flex align-items-center">
-            <a
-              href="#"
-              style={{ textDecoration: "none" }}
-              className="logo d-flex align-items-center me-auto "
-            >
-              <img src="assets/img/logo.png" alt="" />
-              <h1 className="sitename" style={{ fontFamily: "Bahnschrift" }}>
-                Coders Eswatini
-              </h1>
+          Coders Eswatini
+        </h1>
+
+        <img src="assets/img/uda.png" alt="Uda Logo" style={{ height: "50px", maxWidth: "100%" }} />
+     
+    </div>
+        
             </a>
+
+       
+
 
             <nav id="navmenu" className="navmenu">
               <ul>
@@ -112,12 +123,10 @@ export default function Home() {
               <div className="row gy-4">
                 <div className="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
                   <h1 data-aos="fade-up" className="fonting">
-                    Online learning platform that specializes in providing
-                    high-quality courses
+                    Discover, learn, and grow with future-focused courses
                   </h1>
                   <p data-aos="fade-up" data-aos-delay="100">
-                    Designed to equip learners with practical skills needed for
-                    in-demand careers
+                 Empowering you with skills for tomorrow’s careers
                   </p>
                   <div
                     className="d-flex flex-column flex-md-row"
@@ -206,7 +215,7 @@ export default function Home() {
                       alt=""
           style={{ height: '70%'  }}
                     />
-                    <h3>Artificial intelligence Fundamentals</h3>
+                    <h3>Artificial Intelligence Fundamentals</h3>
                     <p>
                       Simulation of human intelligence in machines, enabling
                       them to learn, reason, and solve problems autonomously
@@ -227,7 +236,7 @@ export default function Home() {
             alt=""
 style={{ height: '70%'  }}
           />
-                    <h3>Data science Fundamentals</h3>
+                    <h3>Data Science Fundamentals</h3>
                     <p>
                       The field of analyzing large datasets using statistical
                       methods, machine learning, and algorithms to extract
@@ -267,7 +276,7 @@ style={{ height: '70%'  }}
                       className="img-fluid"
                       alt=""
                     />
-                    <h3>Cloud computing Fundamentals</h3>
+                    <h3>Cloud Computing Fundamentals</h3>
                     <p>
                       {" "}
                       allows users to access computing resources like storage,
@@ -283,7 +292,7 @@ style={{ height: '70%'  }}
             <div className="container section-title" data-aos="fade-up">
               <h2>Features</h2>
               <p>
-                Our Advaced Features
+                Our Advanced Features
                 <br />
               </p>
             </div>
@@ -366,7 +375,7 @@ style={{ height: '70%'  }}
                     >
                       <div className="feature-box d-flex align-items-center">
                         <i className="bi bi-check"></i>
-                        <h3>Modern job market</h3>
+                        <h3>Preparation for in-demand careers.</h3>
                       </div>
                     </div>
                   </div>
@@ -656,39 +665,51 @@ style={{ height: '70%'  }}
             </div>
           </section>
           
-          <section className="features section">
-              <div className="section-title" data-aos="fade-up">
-                  <div className="moving-images">
-                      <div className="image-wrapper">
-          <img src="assets/img/rstp.png" alt="Image 3" style={{ width: '20%', height: '30%'  }}  />
-          <img src="assets/img/uda.png" alt="Image 1" style={{ width: '20%', height: '30%', paddingTop: '50px' }} />
-          <img src="assets/img/ge.png" alt="Image 2" style={{ width: '40%', height: '40%' ,paddingTop: '30px' }} />
-          <img src="assets/img/rstp.png" alt="Image 3" style={{ width: '20%', height: '30%'  }}  />
-         <img src="assets/img/uda.png" alt="Image 1" style={{ width: '20%', height: '30%', paddingTop: '50px' }} />
-          <img src="assets/img/ge.png" alt="Image 2" style={{ width: '40%', height: '40%' ,paddingTop: '30px' }} />
-          <img src="assets/img/rstp.png" alt="Image 3" style={{ width: '20%', height: '30%'  }}  />
-          
-          <img src="assets/img/uda.png" alt="Image 1" style={{ width: '20%', height: '30%', paddingTop: '50px' }} />
-          <img src="assets/img/ge.png" alt="Image 2" style={{ width: '40%', height: '40%' ,paddingTop: '30px' }} />
-          <img src="assets/img/rstp.png" alt="Image 3" style={{ width: '20%', height: '30%'  }}  />
-         <img src="assets/img/uda.png" alt="Image 1" style={{ width: '20%', height: '30%', paddingTop: '50px' }} />
-          <img src="assets/img/ge.png" alt="Image 2" style={{ width: '40%', height: '40%' ,paddingTop: '30px' }} />
-        
-                      </div>
-                  </div>
-              </div>
-              <style jsx>{`
-                  .moving-images {
-                      overflow: hidden;
-                      white-space: nowrap;
-                  }
+<section className="features section">
+  <div className="section-title" data-aos="fade-up">
+    <div className="moving-images">
+      <div className="image-wrapper">
+        <img src="assets/img/gov.png" alt="Gov Logo" />
+        <img src="assets/img/rstp.png" alt="RSTP Logo" />
+        <img src="assets/img/uda.png" alt="UDA Logo" />
+        <img src="assets/img/ge.png" alt="GE Logo" />
+        <img src="assets/img/rstp.png" alt="RSTP Logo" />
+        <img src="assets/img/gov.png" alt="Gov Logo" />
+        <img src="assets/img/uda.png" alt="UDA Logo" />
+        <img src="assets/img/ge.png" alt="GE Logo" />
+        <img src="assets/img/rstp.png" alt="RSTP Logo" />
+        <img src="assets/img/gov.png" alt="Gov Logo" />
+        <img src="assets/img/uda.png" alt="UDA Logo" />
+        <img src="assets/img/ge.png" alt="GE Logo" />
+        <img src="assets/img/rstp.png" alt="RSTP Logo" />
+        <img src="assets/img/gov.png" alt="Gov Logo" />
+        <img src="assets/img/uda.png" alt="UDA Logo" />
+        <img src="assets/img/ge.png" alt="GE Logo" />
+      </div>
+    </div>
+  </div>
 
-                  .image-wrapper {
-                      display: inline-flex;
-                      animation: move 25s linear infinite;
-                  }
+  <style jsx>{`
+    .moving-images {
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 10px 0;
+    }
 
-                  @keyframes move {
+    .image-wrapper {
+      display: inline-flex;
+      animation: move 25s linear infinite;
+      align-items: center;
+    }
+
+    .image-wrapper img {
+      height: 50px;
+      width: auto;
+      margin-right: 16px;
+      object-fit: contain;
+    }
+
+   @keyframes move {
                       0% {
                           transform: translateX(10%);
                       }
@@ -696,11 +717,17 @@ style={{ height: '70%'  }}
                           transform: translateX(-50%);
                       }
                   }
-                  .moving-images img {
-                          margin-right: 10px; /* Space between images */
-                  }
-              `}</style>
-          </section>
+
+    /* Mobile tweaks */
+    @media (max-width: 576px) {
+      .image-wrapper img {
+        height: 40px;
+        margin-right: 10px;
+      }
+    }
+  `}</style>
+</section>
+
           
           
 
