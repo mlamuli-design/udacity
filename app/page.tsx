@@ -61,22 +61,10 @@ export default function Home() {
   <div className="container-fluid container-xl d-flex flex-wrap align-items-center justify-content-between">
     
     <a href="#" style={{ textDecoration: "none" }} className="logo d-flex align-items-center mb-2 mb-md-0">
-      <div className="d-flex align-items-center gap-2 flex-wrap">
-        <img src="assets/img/logo.png" alt="Logo" style={{ height: "50px", maxWidth: "100%" }} />
+      <div className="d-flex align-items-center gap-2 flex-wrap" >
+        <img src="assets/img/ce.png" alt="Logo" style={{ height: "29px", width:"56%", maxWidth: "100%" }} />
 
-        <h1
-          className="sitename mb-0"
-          style={{
-            fontFamily: "Bahnschrift",
-            fontSize: "20px",
-            color: "#000",
-            whiteSpace: "nowrap",
-          }}
-        >
-          Coders Eswatini
-        </h1>
-
-        <img src="assets/img/uda.png" alt="Uda Logo" style={{ height: "50px", maxWidth: "100%" }} />
+        <img src="assets/img/uda.png" alt="Uda Logo" style={{ height: "50px", paddingTop:"8px" , maxWidth: "100%" }} />
      
     </div>
         
